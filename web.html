@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="web.css">
+  <title>Dropdown Menu Button</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+     crossorigin="anonymous">
+  </script>
+  <!-- <style>
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style> -->
+</head>
+<body>
+<p id="abc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam quas fuga id expedita, debitis voluptatem, amet ipsa quo aliquid repellendus facilis in officia deserunt atque ex quasi. Quo sed illum necessitatibus vel quod fugiat, rerum earum optio. Praesentium molestiae labore tempore officia animi minima sit corporis expedita, quisquam doloribus facilis temporibus. Rem delectus dicta beatae ea reprehenderit sed voluptate eaque! Eveniet, pariatur, placeat sit dolorum suscipit quas iste sed quasi modi provident voluptas libero architecto enim quaerat dolor, quis rerum.
+</p>
+<ul>
+  <li class="r">abc</li>
+  <li class="r">def</li>
+  <li class="r">ghi</li>
+  <li class="r">jkl</li>
+  <li class="r">mno</li>
+</ul>
+<div class="main">Main
+  <div class="sister">sister</div>
+</div>
+
+
+<!-- <div class="dropdown">
+  <button class="dropbtn">Dropdown</button>
+  <div class="dropdown-content">
+    <a href="#">Item 1</a>
+    <a href="#">Item 2</a>
+    <a href="#">Item 3</a>
+  </div>
+</div>
+<select>
+    <option>ashraf</option>
+</select> -->
+<script>
+  $(document).ready(function(){
+
+      $('p').on('click',function(){
+        // $(this).hide('slow',function(){
+        //   console.log('p is hidden')
+        // });
+        // $(this).css("color","red")
+        $(this).slideUp()
+        
+
+      })
+      // $('p').hover(function(){
+      //   $(this).css({"cursor":"pointer","background-color":"red","color":"white"})
+      // })
+      // $('p').on('hover',function(){
+      //   $(this).css({"cursor":"pointer"})
+      // })
+ })
+
+ 
+</script>
+</body>
+</html>
