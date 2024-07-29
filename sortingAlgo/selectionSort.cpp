@@ -2,9 +2,10 @@
 using namespace std;
 void selectionSort(int a[],int size){
     int item=0;
-    int k=0;
+    
     for(int i=0;i<size-1;i++){
         item=a[i];
+        int k=0;
         for(int j=i+1;j<size;j++){
             if(a[j]<=item){
                 item=a[j];
