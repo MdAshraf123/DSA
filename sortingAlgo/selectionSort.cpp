@@ -5,7 +5,7 @@ void selectionSort(int a[],int size){
     
     for(int i=0;i<size-1;i++){
         item=a[i];
-        int k=0;
+        int k=i;
         for(int j=i+1;j<size;j++){
             if(a[j]<=item){
                 item=a[j];
