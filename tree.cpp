@@ -12,7 +12,8 @@ struct Node{
     }
 };
 
-Node * createTree(Node * root){
+Node * createTree(){
+    Node * root;
     int x=0;
     cout<<"Enter data- ";
     cin>>x;
@@ -21,9 +22,9 @@ Node * createTree(Node * root){
     }
     root=new Node(x);
     cout<<"Enter data in left of "<<x<<endl;
-    root->left=createTree(root->left);
+    root->left=createTree();
     cout<<"Enter data in right of "<<x<<endl;
-    root->right=createTree(root->right);
+    root->right=createTree();
     return root;
 }
 
@@ -48,6 +49,7 @@ void inOrderTraversal(Node * root){
     cout<<root->data<<" ";
     inOrderTraversal(root->right);
 }
+
 void preOrderTraversal(Node * root){
     if(root==NULL){
         return ;
@@ -56,6 +58,7 @@ void preOrderTraversal(Node * root){
     preOrderTraversal(root->left);
     preOrderTraversal(root->right);
 }
+
 void postOrderTraversal(Node * root){
     if(root==NULL){
         return ;
@@ -68,7 +71,7 @@ void postOrderTraversal(Node * root){
 
 int main(){
 Node * root=NULL;
-root= createTree(root);
+root= createTree();
 inOrderTraversal(root);
     return 0;
 }
